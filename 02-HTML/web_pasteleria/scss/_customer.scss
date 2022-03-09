@@ -1,0 +1,177 @@
+/******Hero header******/
+.hero-image {
+	position: relative;
+	padding-top: 100px;
+	height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: url("../img/cover.jpg") no-repeat center center;
+	background-size: cover;
+
+	&::after {
+		content: ""; // ::before and ::after both require content
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(2, 0, 36);
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(9, 9, 121, 1) 41%,
+			rgba(0, 212, 255, 1) 100%
+		);
+		opacity: 0.5;
+		z-index: 0;
+		mix-blend-mode: multiply;
+	}
+	h1 {
+		font-weight: bold;
+		color: #ffffff;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+}
+
+/******Sección pasteles******/
+.cakes-container,
+.covers-container {
+	max-width: 1300px;
+	margin: 80px auto;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+
+	.cakes-item {
+		flex: 1 1 300px;
+		margin: 5px;
+		text-align: center;
+		background-color: #e85b76;
+
+		box-shadow: 0 4px 15px rgba(232, 91, 118, 0.5);
+		border-radius: 8px;
+		padding-bottom: 30px;
+
+		img {
+			border-radius: 8px 8px 0 0;
+			margin-bottom: 20px;
+		}
+
+		.cakes-title {
+			color: #ffffff;
+		}
+		.cakes-price {
+			font-weight: bold;
+			color: #fbe1e6;
+		}
+	}
+}
+
+/******Sección pasteles******/
+.covers-container {
+	.covers-item {
+		flex: 1 1 19%;
+		max-width: 20%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		background-color: #54b5cf;
+		box-shadow: 0 4px 15px rgba(124, 198, 218, 0.5);
+		margin: 5px;
+		border-radius: 45px 8px 8px 45px;
+		img {
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+		}
+		.covers-info {
+			padding: 10px 15px;
+
+			.covers-title {
+				font-size: 1.2rem;
+				color: #ffffff;
+			}
+			.covers-price {
+				font-weight: bold;
+				color: #d9eef4;
+			}
+		}
+	}
+}
+
+.form-section {
+	max-width: 1300px;
+	margin: 80px auto;
+	padding: 20px;
+
+	.form {
+		width: 60%;
+		background-color: #fce5eb;
+		margin: 0 auto;
+		padding: 40px;
+
+		.radio-container,
+		.checkbox-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 30px;
+
+			.form-box {
+				padding: 5px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1299px) {
+	.cakes-item {
+		flex: 1 1 48%;
+		max-width: 32%;
+	}
+	.covers-container {
+		.covers-item {
+			flex: 1 1 32%;
+			max-width: 33%;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.cakes-item {
+		flex: 1 1 50%;
+		max-width: 50%;
+	}
+	.covers-container {
+		.covers-item {
+			flex: 1 1 48%;
+			max-width: 49%;
+		}
+	}
+	.form-section {
+		.form {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.cakes-item {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+	.covers-container {
+		.covers-item {
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+	}
+	.form-section {
+		.form {
+			width: 95%;
+		}
+	}
+}

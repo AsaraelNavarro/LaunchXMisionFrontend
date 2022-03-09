@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pastelería Sweetcake</title>
+		<link rel="stylesheet" href="css/main.min.css" />
+	</head>
+	<body>
+		<header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo-sweetcake.svg" alt="Logo Image" />
+                </div>
+                <div class="hamburger">
+                    <div class="bars1"></div>
+                    <div class="bars2"></div>
+                    <div class="bars3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Pasteles</a></li>
+                    <li><a href="#">Adornos</a></li>
+                        <button class="buy-button" href="#">Realizar pedido</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero-image">
+            <h1>Sabor y calidad para consentirte</h1>
+        </section>
+
+        <section class="cakes-container">
+            <h3 class="section-title">Elige tu sabor preferido</h3>
+            <article class="cakes-item">
+                <img src="img/pastel-vainilla.jpg" alt="Pastel de vainilla">
+                <h3 class="cakes-title">Vainilla</h3>
+                <p class="cakes-price">$180</p>
+            </article>
+            <article class="cakes-item">
+                <img src="img/pastel-chocolate.jpg" alt="Pastel de chocolate">
+                <h3 class="cakes-title">Chocolate</h3>
+                <p class="cakes-price">$180</p>
+            </article>
+            <article class="cakes-item">
+                <img src="img/pastel-marmoleado.jpg" alt="Pastel marmoleado">
+                <h3 class="cakes-title">Marmoleado</h3>
+                <p class="cakes-price">$180</p>
+            </article>
+            <article class="cakes-item">
+                <img src="img/pastel-red-velvet.jpg" alt="Pastel red velvet">
+                <h3 class="cakes-title">Red Velvet</h3>
+                <p class="cakes-price">$220</p>
+            </article>
+        </section>
+
+        <section class="covers-container">
+            <h3 class="section-title">Elige tus adornos preferidos</h3>
+            <article class="covers-item">
+                <img src="img/adorno-chispas.jpg" alt="Adorno de chispas">
+                <div class="covers-info">
+                    <p class="covers-title">Chispas</p>
+                    <p class="covers-price">$25</p>
+                </div>
+            </article>
+            <article class="covers-item">
+                <img src="img/adorno-chocolate.jpg" alt="Cubierta de chocolate">
+                <div class="covers-info">
+                    <p class="covers-title">Chocolate</p>
+                    <p class="covers-price">$80</p>
+                </div>
+            </article>
+            <article class="covers-item">
+                <img src="img/adorno-cajeta.jpg" alt="Cubierta de cajeta">
+                <div class="covers-info">
+                    <p class="covers-title">Cajeta</p>
+                    <p class="covers-price">$100</p>
+                </div>
+            </article>
+            <article class="covers-item">
+                <img src="img/adorno-frutas.jpg" alt="Adorno de frutas">
+                <div class="covers-info">
+                    <p class="covers-title">Frutas</p>
+                    <p class="covers-price">$80</p>
+                </div>
+            </article>
+            <article class="covers-item">
+                <img src="img/adorno-fondant.jpg" alt="Adorno de fondant">
+                <div class="covers-info">
+                    <p class="covers-title">Fondant</p>
+                    <p class="covers-price">$100</p>
+                </div>
+            </article>
+        </section>
+        <section class="form-section">
+            <h3 class="section-title">Llena el formulario para realizar tu pedido</h3>
+            <div class="form">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Datos personales:</legend>
+                        <label for="name">Nombre completo:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="tel">Teléfono:</label>
+                        <input type="tel" name="tel" id="tel">
+                        <label for="address">Dirección:</label>
+                        <textarea id="address" name="address" placeholder="Dirección de entrega" required=""></textarea>
+                    </fieldset>
+                    <fieldset class="radio-container">
+                        <legend>Tipo de pastel</legend>
+                        <div class="form-box">    
+                            <input type="radio" name="vainilla" id="vainilla"> <label for="vainilla">Vainilla.</label>
+                        </div>
+                        <div class="form-box">
+                            <input type="radio" name="chocolate" id="chocolate"> <label for="chocolate">Chocolate.</label>
+                        </div>
+                        <div class="form-box">
+                            <input type="radio" name="marmoleado" id="marmoleado"> <label for="marmoleado">Marmoleado.</label>
+                        </div>
+                        <div class="form-box">
+                            <input type="radio" name="redVelvet" id="redVelvet"> <label for="redVelvet">Red Velvet.</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="checkbox-container">
+                        <legend>Adornos del pastel</legend>
+                        <div class="form-box"> 
+                            <input type="checkbox" name="chispas" id="chispas"> <label for="chispas">Chispas.</label>
+                        </div>
+                        <div class="form-box"> 
+                            <input type="checkbox" name="chocolate" id="chocolate"> <label for="chocolate">Chocolate.</label>
+                        </div>
+                        <div class="form-box"> 
+                            <input type="checkbox" name="cajeta" id="cajeta"> <label for="cajeta">Cajeta.</label>
+                        </div>
+                        <div class="form-box"> 
+                            <input type="checkbox" name="frutas" id="frutas"> <label for="frutas">Frutas.</label>
+                        </div>
+                        <div class="form-box"> 
+                            <input type="checkbox" name="fondant" id="fondant"> <label for="fondant">Fondant.</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Pedir pastel">
+                </form>
+            </div>
+        </section>
+	</body>
+</html>
