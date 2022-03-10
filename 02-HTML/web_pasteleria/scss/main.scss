@@ -1,5 +1,6 @@
 @import "_reset.scss";
 @import "_form.scss";
+@import "_tables.scss";
 @import "_customer.scss";
 @import "_bakery.scss";
 @import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
@@ -7,6 +8,7 @@
 body {
 	font-family: "Poppins", sans-serif;
 	color: #383838;
+	background: url("../img/inspiration-geometry.png") repeat;
 }
 
 h1 {
@@ -30,9 +32,12 @@ h4 {
 	font-family: "Kavoon", cursive;
 }
 
+.space {
+	padding: 80px 0;
+}
+
 .section-title {
 	flex: 1 1 100%;
-	text-align: center;
 	margin-bottom: 40px;
 }
 
@@ -86,6 +91,19 @@ nav {
 		}
 
 		position: relative;
+	}
+	.icon-login {
+		a {
+			.fa-circle {
+				color: #eaeaea;
+			}
+			.fa-user {
+				color: #ffffff;
+			}
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
 	}
 }
 

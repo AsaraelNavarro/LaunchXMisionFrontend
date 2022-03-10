@@ -11,6 +11,7 @@ label {
 }
 input[type="text"],
 input[type="tel"],
+input[type="mail"],
 input[type="date"],
 input[type="datetime"],
 input[type="email"],
@@ -38,6 +39,8 @@ select {
 	margin-bottom: 30px;
 }
 input[type="text"]:focus,
+input[type="tel"],
+input[type="mail"],
 input[type="date"]:focus,
 input[type="datetime"]:focus,
 input[type="email"]:focus,
