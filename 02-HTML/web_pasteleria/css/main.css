@@ -1323,6 +1323,7 @@ input[type="button"]:hover {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   z-index: 1;
 }
 
@@ -1844,6 +1845,10 @@ nav {
 
 /*Responsive Adding Media Queries*/
 @media screen and (max-width: 800px) {
+  .logo {
+    text-align: left;
+    width: 45vw;
+  }
   nav {
     position: fixed;
     z-index: 3;
