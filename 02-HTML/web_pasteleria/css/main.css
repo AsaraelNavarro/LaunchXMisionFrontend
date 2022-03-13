@@ -1738,7 +1738,6 @@ h4 {
 nav {
   height: 100px;
   width: 100%;
-  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1780,6 +1779,7 @@ nav {
 
 .nav-links li {
   position: relative;
+  /*Buttons Styling*/
 }
 
 .nav-links li a {
@@ -1797,6 +1797,24 @@ nav {
   border-bottom: 1px solid #e85b76;
 }
 
+.nav-links li .buy-button {
+  padding: 15px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #e85b76;
+  border: 1.5px solid #e85b76;
+  color: #ffffff;
+  border-radius: 2rem;
+}
+
+.nav-links li .buy-button:hover {
+  color: #fff;
+  background-color: #7cc6da;
+  border: 1.5px solid #7cc6da;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms;
+}
+
 .nav-links .icon-login a .fa-circle {
   color: #eaeaea;
 }
@@ -1807,26 +1825,6 @@ nav {
 
 .nav-links .icon-login a:hover {
   border-bottom: 1px solid transparent;
-}
-
-/*Buttons Styling*/
-.buy-button {
-  padding: 15px 25px;
-  margin-left: 2rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #e85b76;
-  border: 1.5px solid #e85b76;
-  color: #ffffff;
-  border-radius: 2rem;
-}
-
-.buy-button:hover {
-  color: #fff;
-  background-color: #7cc6da;
-  border: 1.5px solid #7cc6da;
-  -webkit-transition: all ease-in-out 350ms;
-  transition: all ease-in-out 350ms;
 }
 
 /*Navigation Icon Styling*/
@@ -1848,6 +1846,7 @@ nav {
   .logo {
     text-align: left;
     width: 45vw;
+    z-index: 4;
   }
   nav {
     position: fixed;
@@ -1866,7 +1865,7 @@ nav {
     transition: all 0.7s ease;
   }
   .nav-links {
-    background: #053742;
+    background: #f3fafc;
     position: fixed;
     opacity: 1;
     height: 100vh;
@@ -1875,6 +1874,10 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 100px 0 0;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
     -webkit-transition: all 1s ease-out;
@@ -1888,6 +1891,7 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+    padding: 20px;
   }
   .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
@@ -1918,6 +1922,18 @@ nav {
     -webkit-transition: all 0.5s ease 1s;
     transition: all 0.5s ease 1s;
     margin: 0;
+  }
+  .nav-links li a {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .nav-links li a:hover {
+    color: #e85b76;
+    border-bottom: 1px solid #e85b76;
   }
   li.fade {
     opacity: 1;

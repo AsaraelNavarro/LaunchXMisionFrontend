@@ -44,7 +44,6 @@ h4 {
 nav {
 	height: 100px;
 	width: 100%;
-	padding: 0 20px;
 	display: flex;
 	position: fixed;
 	z-index: 10;
@@ -91,6 +90,25 @@ nav {
 		}
 
 		position: relative;
+
+		/*Buttons Styling*/
+
+		.buy-button {
+			padding: 15px 25px;
+			text-transform: uppercase;
+			cursor: pointer;
+			background-color: #e85b76;
+			border: 1.5px solid #e85b76;
+			color: #ffffff;
+			border-radius: 2rem;
+
+			&:hover {
+				color: #fff;
+				background-color: #7cc6da;
+				border: 1.5px solid #7cc6da;
+				transition: all ease-in-out 350ms;
+			}
+		}
 	}
 	.icon-login {
 		a {
@@ -104,26 +122,6 @@ nav {
 				border-bottom: 1px solid transparent;
 			}
 		}
-	}
-}
-
-/*Buttons Styling*/
-
-.buy-button {
-	padding: 15px 25px;
-	margin-left: 2rem;
-	text-transform: uppercase;
-	cursor: pointer;
-	background-color: #e85b76;
-	border: 1.5px solid #e85b76;
-	color: #ffffff;
-	border-radius: 2rem;
-
-	&:hover {
-		color: #fff;
-		background-color: #7cc6da;
-		border: 1.5px solid #7cc6da;
-		transition: all ease-in-out 350ms;
 	}
 }
 
@@ -147,6 +145,7 @@ nav {
 	.logo {
 		text-align: left;
 		width: 45vw;
+		z-index: 4;
 	}
 	nav {
 		position: fixed;
@@ -165,12 +164,14 @@ nav {
 	}
 
 	.nav-links {
-		background: #053742;
+		background: #f3fafc;
 		position: fixed;
 		opacity: 1;
 		height: 100vh;
 		width: 100%;
 		flex-direction: column;
+		justify-content: flex-start;
+		padding: 100px 0 0;
 		clip-path: circle(50px at 90% -20%);
 		-webkit-clip-path: circle(50px at 90% -10%);
 		transition: all 1s ease-out;
@@ -184,6 +185,7 @@ nav {
 
 		li {
 			opacity: 0;
+			padding: 20px;
 
 			&:nth-child(1) {
 				transition: all 0.5s ease 0.2s;
@@ -213,6 +215,16 @@ nav {
 			&:nth-child(7) {
 				transition: all 0.5s ease 1s;
 				margin: 0;
+			}
+
+			a {
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				&:hover {
+					color: #e85b76;
+					border-bottom: 1px solid #e85b76;
+				}
 			}
 		}
 	}
